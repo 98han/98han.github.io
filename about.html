@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta content="en-us" http-equiv="Content-Language" />
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui">
+	<title>Title</title>
+</head>
+<style>
+	* {
+		padding: 0;
+		margin: 0;
+		box-sizing: border-box;
+	}
+
+	html {
+		height: 100%;
+		min-height: 100%;
+	}
+
+	body {
+		min-height: 100%;
+		background-color: #FFFFFF;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		color: #6C6C6C;
+		font-size: 1em;
+		max-width: 100%;
+		width: 100%;
+		max-width: 800px;
+		text-align: center;
+		margin: auto;
+	}
+
+	div {
+		max-width: 800px;
+		padding-left: 5%;
+		padding-right: 5%;
+		text-align: left;
+	}
+
+	div>h1 {
+		font-size: 1.3em;
+		padding-top: 75px;
+		padding-bottom: 25px;
+		text-align: left;
+	}
+
+	div>p {
+		text-align: left;
+		line-height: 1.8em;
+		text-indent: 2em;
+	}
+
+	a {
+		color: #8968CD;
+		font-size: 1em;
+		line-height: 1.8em;
+		text-decoration: none;
+	}
+
+	#thanks_list {
+		height: 3em;
+		overflow-y: hidden;
+	}
+</style>
+
+<body>
+	<div id="content">
+		<h1>欢迎 </h1>
+		<p>晚来天欲雪，能饮一杯无</p>
+
+
+		<h1>版本更新</h1>
+		<p>暂无更新日志...</p>
+		
+
+
+		<h1>反馈渠道</h1>
+		<p>暂无反馈渠道，请在App内进行反馈</p>
+
+
+
+
+		<h1>特别鸣谢</h1>
+		<p id='thanks_list'>暂无...</p>
+		<p><a id='show_btn' href='javascript:void(0)' onclick='show_more()'>查看更多</a></p>
+		<h1>End</h1>
+		<script
+			type='text/javascript'> function show_more() { var show_btn = document.getElementById('show_btn'); var thanks_list = document.getElementById('thanks_list'); var total_height = thanks_list.scrollHeight; thanks_list.style.height = total_height + 'px'; show_btn.style.display = 'none'; } </script>
+	</div>
+</body>
+
+</html>
